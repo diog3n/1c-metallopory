@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="ТаблицаПеремещений" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТаблицаПеремещений</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаПеремещенийКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ТаблицаПеремещенийКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="ТаблицаПеремещенийРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ТаблицаПеремещенийСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>ТаблицаПеремещений</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПеремещенийСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаПеремещенийСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаПеремещенийСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>ТаблицаПеремещений</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПеремещенийСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТаблицаПеремещенийСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаПеремещенийУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>ТаблицаПеремещений</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаПеремещенийУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ТаблицаПеремещенийУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТаблицаПеремещенийНомерСтроки" id="20">
+					<DataPath>Объект.ТаблицаПеремещений.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаПеремещенийНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаблицаПеремещенийНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="ТаблицаПеремещенийСкладОтгрузки" id="23">
+					<DataPath>Объект.ТаблицаПеремещений.СкладОтгрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаПеремещенийСкладОтгрузкиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТаблицаПеремещенийСкладОтгрузкиРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТаблицаПеремещенийСкладНазначения" id="26">
+					<DataPath>Объект.ТаблицаПеремещений.СкладНазначения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаПеремещенийСкладНазначенияКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаблицаПеремещенийСкладНазначенияРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТаблицаПеремещенийТовар" id="29">
+					<DataPath>Объект.ТаблицаПеремещений.Товар</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаПеремещенийТоварКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТаблицаПеремещенийТоварРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ТаблицаПеремещенийКоличество" id="32">
+					<DataPath>Объект.ТаблицаПеремещений.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаПеремещенийКоличествоКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТаблицаПеремещенийКоличествоРасширеннаяПодсказка" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Перемещение</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
